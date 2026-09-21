@@ -1,0 +1,26 @@
+# Ultra-short CPU smoke run (no HuggingFace download).
+seed: 0
+device: cpu
+
+n_layer: 2
+n_head: 2
+n_embd: 64
+block_size: 64
+dropout: 0.0
+bias: false
+
+dataset: synthetic
+data_dir: data
+max_samples: 40
+val_ratio: 0.1
+
+batch_size: 4
+learning_rate: 0.001
+weight_decay: 0.01
+max_iters: 30
+eval_interval: 10
+eval_iters: 5
+grad_clip: 1.0
+
+checkpoint_dir: checkpoints
+run_name: smoke

@@ -1,0 +1,26 @@
+# CPU demo on hand-written micro-stories (offline; no HF download).
+seed: 0
+device: cpu
+
+n_layer: 2
+n_head: 4
+n_embd: 128
+block_size: 128
+dropout: 0.1
+bias: false
+
+dataset: synthetic
+data_dir: data
+max_samples: 200
+val_ratio: 0.05
+
+batch_size: 8
+learning_rate: 0.0003
+weight_decay: 0.1
+max_iters: 500
+eval_interval: 100
+eval_iters: 20
+grad_clip: 1.0
+
+checkpoint_dir: checkpoints
+run_name: cpu_synthetic
