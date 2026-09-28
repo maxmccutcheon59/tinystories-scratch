@@ -32,7 +32,7 @@ def main() -> None:
     if device.type == "cuda" and not torch.cuda.is_available():
         device = torch.device("cpu")
 
-    ckpt = torch.load(args.checkpoint, map_location=device, weights_only=False)
+    ckpt = torch.load(args.checkpoint, map_location=device, weights_only=True)
     cfg = ckpt["config"]
     tokenizer = CharTokenizer.from_dict(ckpt["tokenizer"])
     model = GPT(
