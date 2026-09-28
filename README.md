@@ -1,5 +1,8 @@
 # tinystories-scratch
 
+[![CI](https://github.com/maxmccutcheon59/tinystories-scratch/actions/workflows/ci.yml/badge.svg)](https://github.com/maxmccutcheon59/tinystories-scratch/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 **From-scratch PyTorch reimplementation** related to *TinyStories* (Eldan & Li, 2023) — a minimal GPT-style decoder-only language model trained and demoed on TinyStories-scale data or a tiny offline subset.
 
 Author: **Max McCutcheon** \<MaxMcCutcheon1@outlook.com\>
